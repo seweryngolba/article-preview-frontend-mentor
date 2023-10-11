@@ -24,6 +24,7 @@ body {
   align-items: center;
   flex-direction: column;
   background: hsl(0, 100%, 100%);
+  position: relative;
 }
 
 .article-photo {
@@ -85,6 +86,46 @@ body {
 
 .share-button {
   padding: 10px;
-  background: hsl(214, 17%, 51%, 0.1);
+  background-color: hsl(214, 17%, 51%, 0.1);
   border-radius: 50%;
+}
+
+.share-links {
+  position: absolute;
+  bottom: 0;
+  width: 350px;
+  height: 90px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background: hsl(217, 19%, 35%);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.links-container {
+  width: 290px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.links-container p {
+  letter-spacing: 7px;
+  color: hsl(210, 46%, 95%, 0.7);
+}
+
+.social-icons {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: -40px;
+}
+
+.active-share {
+  padding: 10px;
+  background-color: hsl(210, 46%, 95%, 0.3);
+  border-radius: 50%;
+  filter: brightness(0) invert(1);
 }
